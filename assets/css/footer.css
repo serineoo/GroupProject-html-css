@@ -44,14 +44,14 @@ footer {
 
     .icon-box {
         position: relative;
-        top: 200px;
+        top: 220px;
         left: 150px;
     }
 
     .second-ft {
-        font-size: 13px;
-        padding-left: 2rem;
-        padding-right: 2rem;
+        font-size: 12px;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
     .flex-1 {
@@ -65,7 +65,7 @@ footer {
     }
 
     .last-ft {
-        font-size: 13px;
-        padding-top: 20px;
+        font-size: 12px;
+        padding-top: 40px;
     }
 }
