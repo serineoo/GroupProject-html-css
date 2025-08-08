@@ -4,10 +4,18 @@ footer {
 
 .line-ft {
     border-bottom: 1px solid #3C3B3D;
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
+
+.calendar-ft {
+    display: flex;
+    justify-content: flex-start;
 }
 
 .icon-ft {
     display: flex;
+    justify-content: flex-end;
 }
 
 .icon {
@@ -16,10 +24,18 @@ footer {
 
 .icon-box {
     position: relative;
-    left: 85%;
+    bottom: 50px;
     width: 50px;
     height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
+}
+
+.flex-ft {
+    display: flex;
+    justify-content: space-around;
 }
 
 .second-ft a {
@@ -33,9 +49,14 @@ footer {
 }
 
 @media screen and (max-width:768px) {
-    
+
+    .line-ft {
+        padding-bottom: 10px;
+    }
+
     .calendar-ft {
         text-align: center;
+        justify-content: center;
     }
 
     .icon {
@@ -44,8 +65,8 @@ footer {
 
     .icon-box {
         position: relative;
-        top: 220px;
-        left: 150px;
+        top: 150px;
+        right: 150px;
     }
 
     .second-ft {
@@ -54,15 +75,6 @@ footer {
         padding-right: 1rem;
     }
 
-    .flex-1 {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .flex-2 {
-        display: flex;
-        justify-content: space-around;
-    }
 
     .last-ft {
         font-size: 12px;
