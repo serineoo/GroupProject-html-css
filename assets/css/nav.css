@@ -1,0 +1,241 @@
+.hero {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white;
+}
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+.text-center {
+  margin-top: 50px;
+}
+.button-style {
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+}
+.navbar-toggler-icon {
+  background-image: none;
+}
+.btn-outline-success:hover {
+  background-color: white;
+  border: white;
+  color: rgb(38, 38, 38);
+}
+/* 메뉴바 기본은 숨김(데스크톱) */
+.navbar-toggler {
+  display: none;
+  border: none;
+  color: white; /* 아이콘 색 */
+}
+/* 모바일에서만 보이게 */
+@media (max-width: 768px) {
+  .navbar-toggler {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .form-control {
+    width: 100px;
+  }
+
+  .logo-box {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.1rem;
+  }
+}
+.logo-box {
+  padding: 0rem 0.3rem;
+  color: black;
+
+  font-weight: 900;
+  text-align: center;
+}
+.logo-box {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 900;
+  line-height: 1.2;
+  font-size: 1.3rem;
+  background-color: transparent;
+
+  /* 박스 스타일 */
+  background-color: white;
+  color: black;
+  -webkit-text-stroke: 0.5px black;
+  padding: 4px 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.navbar {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: transparent !important; /* 강제 투명 */
+}
+.navbar .container-fluid {
+  position: relative;
+}
+.white {
+  color: white;
+  border: 1px solid white;
+}
+
+
+
+@media (max-width: 768px) {
+  .hero .carousel-item {
+    background-position: 50%;
+    background-size: contain;
+    background-attachment: scroll;
+  }
+}
+@media (max-width: 768px) {
+  .search-form .form-control,
+  .search-form .forsmbtn {
+    display: none;
+  }
+  .search-form .search-icon {
+    display: inline-block;
+  }
+}
+/* 기본적으로 메뉴 항목은 데스크탑에서 항상 보임 */
+.navbar-collapse {
+  display: flex !important;
+}
+/* 모바일 전용: 메뉴를 버튼 아래 오버레이로 */
+@media (max-width: 768px) {
+  /* 메뉴 기준이 될 컨테이너를 기준 좌표로 설정 */
+  .navbar .d-flex.align-items-center {
+    position: relative;
+  }
+  /* 기본 숨김 */
+  .navbar-collapse {
+    display: none !important;
+    position: absolute; /* 버튼 아래로 띄우기 */
+    top: 100%; /* 컨테이너(=버튼 줄) 아래쪽에 붙임 */
+    left: 0; /* 버튼 왼쪽에 정렬 */
+    width: 220px; /* 필요 시 조정 (auto로도 가능) */
+    background: rgba(0, 0, 0, 0.9);
+    padding: 0.75rem 1rem;
+    border-radius: 0 0 10px 10px;
+    z-index: 1000; /* 위로 올리기 (로고/검색과 겹침 방지) */
+  }
+  /* 열렸을 때만 보이게 */
+  .navbar-collapse.show {
+    display: block !important;
+  }
+  /* 드롭다운 느낌 나도록 세로 정렬 */
+  .navbar-collapse .navbar-nav {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  .navbar-collapse .nav-link {
+    color: #fff !important;
+    font-weight: 700;
+  }
+}
+.search-icon {
+  font-size: 1.5rem;
+  color: rgb(86, 86, 86);
+  border: none;
+}
+/* 검색 필드 스타일 */
+.input-group .form-control {
+  border-right: none;
+}
+
+/* 입력칸 자체도 흰 배경 제거(안 하면 흰 박스처럼 보임) */
+.search-form .form-control {
+  background-color: transparent !important;
+  color: white;
+  border: 0.7px solid white; /* 흰 테두리 */
+  border-right: none; /* 오른쪽 테두리 제거 (아이콘과 붙이기) */
+  border-radius: 10px 0 0 10px; /* 왼쪽만 둥글게 */
+  box-shadow: none;
+}
+.search-form .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.input-group .input-group-text {
+  background-color: transparent !important;
+  border: 1px solid white; /* 흰 테두리 */
+  border-left: none; /* 왼쪽 테두리 제거 (input과 연결) */
+  border-radius: 0 10px 10px 0; /* 오른쪽만 둥글게 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-group .input-group-text i {
+  color: white !important;
+}
+@media (max-width: 768px) {
+  .input-group .input-group-text {
+    background-color: transparent; /* 모바일: 배경 투명 */
+    border: none; /* 모바일: 테두리 제거 */
+  }
+  .input-group .input-group-text i {
+    color: white; /* 모바일: 아이콘 흰색 */
+  }
+}
+@media (max-width: 768px) {
+  .mobile-margin {
+    margin: 0px 35px;
+  }
+}
+.search-form .form-control {
+  width: 150px; /* 기존보다 좁게 */
+  font-size: 0.9rem; /* 글자 크기 줄임 */
+}
+.search-form .input-group-text {
+  padding: 4px 8px; /* 버튼 패딩 줄이기 */
+}
+@media (max-width: 768px) {
+  .search-form .form-control {
+    width: 100px; /* 모바일에서 더 작게 */
+  }
+}
+
+/* 기본 상태: 투명 */
+.navbar {
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+/* 스크롤 후 색 반전 */
+.navbar.scrolled {
+  background-color: white !important; /* 배경 흰색 */
+}
+
+.navbar.scrolled .nav-link {
+  color: black !important; /* 메뉴 글씨 검정 */
+}
+
+.navbar.scrolled .logo-box {
+  background-color: black; /* 로고 배경 검정 */
+  color: white; /* 로고 글씨 흰색 */
+}
+
+.navbar.scrolled .form-control {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+/* placeholder 색상도 명시 */
+.navbar.scrolled .form-control::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.navbar.scrolled .input-group-text {
+  border: 1px solid black;
+}
+
+.navbar.scrolled .input-group-text i {
+  color: black !important;
+}
