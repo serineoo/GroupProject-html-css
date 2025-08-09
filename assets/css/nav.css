@@ -1,6 +1,6 @@
-nav{
-    font-family: 'Noto Sans KR', 'Helvetica Neue', Arial, sans-serif;
-    font-stretch: 110%;
+nav {
+  font-family: "Noto Sans KR", "Helvetica Neue", Arial, sans-serif;
+  font-stretch: 110%;
 }
 
 .hero {
@@ -89,8 +89,6 @@ nav{
   color: white;
   border: 1px solid white;
 }
-
-
 
 @media (max-width: 768px) {
   .hero .carousel-item {
@@ -189,8 +187,8 @@ nav{
     color: rgb(31, 31, 31); /* 모바일: 아이콘 흰색 */
     border: none;
   }
-  
-  .navbar-toggler i{
+
+  .navbar-toggler i {
     color: rgb(253, 253, 253); /* 모바일: 햄버거 아이콘 흰색 */
   }
 }
@@ -249,12 +247,26 @@ nav{
 @media (max-width: 768px) {
   .navbar.scrolled .input-group-text {
     border: none;
-}
-   .navbar.scrolled .navbar-toggler i{
+  }
+  .navbar.scrolled .navbar-toggler i {
     color: rgb(31, 31, 31); /* 모바일: 햄버거 아이콘 흰색 */
+  }
+
+  /* 모바일 메뉴 펼쳤을 때 nav 링크 흰색 유지 */
+  .navbar-light .navbar-nav .nav-link {
+    color: white !important;
+  }
+
+  .navbar-light .navbar-nav .nav-link:hover,
+  .navbar-light .navbar-nav .nav-link:focus {
+    color: #f0f0f0 !important; /* hover 시 약간 밝게 */
+  }
+
+  /* 활성 메뉴 항목도 흰색 */
+  .navbar-light .navbar-nav .nav-link.active {
+    color: white !important;
   }
 }
 .navbar.scrolled .input-group-text i {
   color: black !important;
 }
- 

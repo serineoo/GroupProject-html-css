@@ -1,5 +1,6 @@
 footer {
     color: #3C3B3D;
+    background-color: #ececec;
 }
 
 .line-ft {
@@ -46,6 +47,7 @@ footer {
 .last-ft {
     display: flex;
     justify-content: center;
+    padding-bottom: 50px;
 }
 
 @media screen and (max-width:768px) {
@@ -79,5 +81,6 @@ footer {
     .last-ft {
         font-size: 12px;
         padding-top: 40px;
+        margin-bottom: 40px;
     }
 }
