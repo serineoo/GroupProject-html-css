@@ -22,14 +22,15 @@ body {
 .product-grid{
     /* color는 글씨색 */
     color: #333;
-    background: 
+    /* background: 
                 radial-gradient(circle at 20% 20%, #a8edea, transparent 50%),
                 radial-gradient(circle at 80% 30%, #fceabb, transparent 40%),
                 radial-gradient(circle at 50% 80%, #ffe136, transparent 50%),
                 #fdfbfb
-                ;
+                ; */
     /* 간단한 회색 쓰고 싶으면 여기 */
     /* background-color: rgb(249, 249, 249); */
+    background-color: white;
 }
 
 .product-card {
