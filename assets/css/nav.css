@@ -1,3 +1,8 @@
+nav{
+    font-family: 'Noto Sans KR', 'Helvetica Neue', Arial, sans-serif;
+    font-stretch: 110%;
+}
+
 .hero {
   background-position: center center;
   background-size: cover;
@@ -181,7 +186,12 @@
     border: none; /* 모바일: 테두리 제거 */
   }
   .input-group .input-group-text i {
-    color: white; /* 모바일: 아이콘 흰색 */
+    color: rgb(31, 31, 31); /* 모바일: 아이콘 흰색 */
+    border: none;
+  }
+  
+  .navbar-toggler i{
+    color: rgb(253, 253, 253); /* 모바일: 햄버거 아이콘 흰색 */
   }
 }
 @media (max-width: 768px) {
@@ -236,6 +246,15 @@
   border: 1px solid black;
 }
 
+@media (max-width: 768px) {
+  .navbar.scrolled .input-group-text {
+    border: none;
+}
+   .navbar.scrolled .navbar-toggler i{
+    color: rgb(31, 31, 31); /* 모바일: 햄버거 아이콘 흰색 */
+  }
+}
 .navbar.scrolled .input-group-text i {
   color: black !important;
 }
+ 
